@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container{
+    width: 1230px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header{
+    background-color: rgb(72, 79, 84);
+    padding: 20px 50px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+.left_item{
+    width: 240px;
+    font-size: 30px;
+    color: white;
+}
+
+.search_item{
+    width: 50%;
+    position: relative;
+    margin-left: -200px;
+}
+.search_item input{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+
+}
+.search_item img{
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.right_item{
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: relative;
+}
+.right_item img{
+    width: 50px;
+}
+
+.basket_count{
+    background-color: rgb(240, 58, 58);
+    text-align: center;
+    width: 20px;
+    margin: 0 auto;
+    position: absolute;
+    left: 15px;
+    color: white;
+    border-radius: 30px;
+}
+
+.wrapper_article{
+    width: 100%;
+}
+
+.cards{
+    margin: 0 auto;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+
+.card_bottom_item{
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.card_bottom_item button{
+    width: 100%;
+    background: none;
+    border: none;
+    background-color: rgb(93, 93, 225);
+    color: white;
+    font-size: 15px;
+    border-radius:10px ;
+    transition: .4s;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card_bottom_item button:hover{
+    background-color: rgb(40, 45, 50);
+    color: rgb(255, 244, 244);
+}
+
+.card_bottom_item p, h3{
+    font-size: 23px;
+}
+
+.footer{
+    background-color: rgb(72, 79, 84);
+    padding: 20px 50px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.basket_wrapper{
+    display: none;
+    width: 100%;
+    height: 100% ;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* черный цвет с 50% прозрачностью */
+}
+.basket_wrapper h1{
+    margin: 10px  20px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    position: absolute;
+    right: 0;    
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.basket_active{
+    width: 60%;
+    height: 60%;
+    background-color: rgb(241, 241, 241);
+    margin: 100px auto;
+
+}
+
+.basket_wrapper h1:active{
+    color: red;
+}
+
+.basket{
+    cursor: pointer;
+}
+
